@@ -1,0 +1,497 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS */
+body {
+    background-color: #001f3f;
+    color: whitesmoke;
+    
+}
+
+header {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #555;
+    height: 95px;
+}
+
+li a {
+    display: block;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: red;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    top: 55px;
+    font-weight: 900;
+}
+#veloV {
+    height: 146px;
+}
+#imgSlider {
+    position: relative;
+    bottom: 60px;
+    width: 100%;
+    height: 700px;
+}
+.text1 {
+    color: red;
+    font-size: 40px;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+}
+
+.text2 {
+    color: red;
+    font-size: 40px;
+    position: absolute;
+    left: 8%;
+    top: 30%;
+}
+
+.text3 {
+    color: red;
+    font-size: 40px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+
+.text4 {
+    color: red;
+    font-size: 40px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+#bouton-pause {
+    position: relative;
+    left: 46%;
+    top: -40px;
+}
+
+#bouton-play {
+    position: relative;
+    left: 46%;
+    top: -40px;
+}
+
+#fleche-droite {
+    position: relative;
+    left: 46%;
+    top: -40px;
+}
+
+#fleche-gauche {
+    position: relative;
+    left: 46%;
+    top: -40px;
+}
+
+.ligne {
+    border-bottom: 3px solid red;
+}
+.map {
+     height: 600px;
+     width: 65%;
+     margin-top: 55px;
+     
+}
+#app_information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#infoStations {
+    position: relative;
+    border: 3px solid red;
+    width: 475px;
+    height: 650px;
+    color: white;
+    top: 40px;
+    display: none;
+    flex-direction: column;
+}
+#informations {
+   margin-left: 10px;
+    margin-top: 20px;
+}
+#erase {
+    position: relative;
+    left: 10%;
+    margin-top: 10px;
+}
+#bouton_envoi {
+    position: relative;
+    display: inline-block;
+    left: 14%;
+
+}
+#canvas {
+    border: solid 2px red;
+    background-color: white;
+    margin-left: 0px;
+    margin-top: 5%;
+    width: 290px;
+}
+#canvasDiv {
+    position: relative;
+    top: 2%;
+    display: none;
+}
+#reservation {
+    position: relative;
+    left: 15%;
+    top: 8%;
+    border: solid 2px red;
+    width: 290px;
+    padding: 20px;
+}
+#prenom {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    left : 7px;
+}
+#nom {
+    position: relative;
+    left: 7px;
+}
+#velovText {
+    position: relative;
+    text-align: center;
+    top: 100px;
+    font-size: 110px;
+    font-weight: 900;
+    display: block;
+}
+
+#retour {
+    display: none;
+    position: relative;
+}
+#reserver {
+    display: inline-block;
+}
+.V {
+    color: red;
+}
+footer {
+    height: 100px;
+}
+#footerP {
+    border-left: 3px solid red;
+    border-top: 3px solid red;
+    width: 175px;
+    position: relative;
+    top: 80px;
+    padding: 5px;
+}
+#index {
+    display: none;
+}
+#cancel {
+    position: absolute;
+    width: 70px;
+    top: 95%;
+    left: 43%;
+    display: none;
+}
+#infoReservation {
+    position: relative;
+    top: 20px;
+}
+#maStation {
+    visibility: hidden;
+}
+#timer {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 479px) {
+    header {
+        width: 479px;
+    }
+    #slider {
+        width: 720px;
+    }
+    .text1 {
+        top: 40%;
+    }
+    .text2 {
+        top: 40%;
+    }
+    .text3 {
+        top: 40%;
+    }
+    .text4 {
+        top: 40%;
+    }
+    h1 {
+        font-size: 50px;
+        top: 0;
+        left: 100px;
+    }
+    #veloV {
+        margin-left: 229px;
+    }
+    .ligne {
+        width: 768px;
+    }
+    #app_information {
+        width: 700px;
+    }
+    .map {
+        margin-left: 100px;
+    }
+    #infoStations {
+        width: 479px;
+        left: 50px;
+    }
+    #reservation {
+        width: 300px;
+    }
+    #infoReservation {
+        top: 50px;
+    }
+    #bouton_envoi {
+        display: inline-block;
+        visibility: visible;
+    }
+    footerP {
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        width: 850px;
+    }
+    #slider {
+        width: 850px;
+    }
+    .ligne {
+        width: 850px;
+    }
+    #bouton_envoi {
+        display: inline-block;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        width: 1024px;
+    }
+    #slider {
+        width: 1024px;
+    }
+    .ligne {
+        width: 1024px;
+    }
+    #infoReservation {
+        top: 60px;
+    }
+    #bouton_envoi {
+        display: inline-block;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    header {
+        width: 667px;
+    }
+    #slider {
+        width: 667px;
+    }
+    .ligne {
+        width: 667px;
+    }
+    #infoReservation {
+        top: 60px;
+    }
+    #bouton_envoi {
+        display: inline-block;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    header {
+        width: 812px;
+    }
+    #slider {
+        width: 812px;
+    }
+    .ligne {
+        width: 812px;
+    }
+    #infoReservation {
+        top: 60px;
+    }
+    #bouton_envoi {
+        display: inline-block;
+        visibility: visible;
+    }
+}
+
+
+
+
+
+
+    
+    
+    

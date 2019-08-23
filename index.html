@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
+    <meta name="viewport" content="width=768" />
+    <meta name="viewport" content="width=479" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="viewport" content="width=667" />
+    <meta name="viewport" content="width=812" />
+    <link rel="stylesheet" href=/CSS/style.css />
+
+
+    <title> carte réservation de vélo </title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <ul>
+            <li><a href="#slider" title="slider"> Comment ça marche ? </a></li>
+            <li><a href="#app_information" title="app"> App </a></li>
+        </ul>
+        <h1> Carte de réservation de Vélo'<span class="V">V</span> à Lyon </h1>
+        <img src="/img/velovelovoriginaljpg_58a72dd956a7d.jpg" alt="logo de veloV" id="veloV">
+    </header>
+    <!-- SLIDER -->
+    <section id="slider">
+        <img width="800" height="600" id="imgSlider" src="/img/velo-lyon.jpg" alt="images_lyon">
+        <p id="sliderText"></p>
+
+        <button class="fas fa-backward" id="fleche-gauche"></button>
+        <button class="fas fa-forward" id="fleche-droite"></button>
+        <button id="bouton-pause" class="bouton">❚❚</button>
+    </section>
+
+    <div class="ligne"></div>
+
+    <section>
+        <div id="app_information">
+            <div id="map" class="map"></div>
+            <div id="infoStations">
+
+                <div id="informations">
+                    <h3 id="titre_station"> Nom de la station : <span id="valeurTitreStation"> </span> </h3>
+                    <br>
+                    <p id="etat_station"> Etat de la station : <span id="valeurEtatStation"> </span> </p>
+                    <br>
+                    <p id="adresse_station"> Adresse : <span id="valeurAdresseStation"> </span> </p>
+                    <br>
+                    <p id="place_station"> Nombre de place disponibles : <span id="valeurPlaceStation"> </span> </p>
+                    <br>
+                    <p id="velo_station"> Nombre de vélo disponibles : <span id="valeurVeloStation"> </span> </p>
+                    <div id="index"></div>
+                </div>
+
+                <div id="reservation">
+                    <label> Nom : </label>
+                    <input type="text" name="nom" id="nom" placeholder="Nom">
+                    <br>
+                    <label> Prenom : </label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Prenom">
+                    <br>
+                    <button type="button" id="reserver">Reserver</button>
+                    <button type="button" id="retour">Retour</button>
+
+                    <div id="canvasDiv">
+                        <canvas id="canvas"></canvas>
+                        <div class="bouton-canvas">
+                            <button type="button" id="erase">Effacer</button>
+                            <button type="submit" id="bouton_envoi">Valider</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p id="velovText"> Vélo'<span class="V">V</span> </p>
+                </div>
+            </div>
+        </div>
+        <div id="infoReservation">
+            <div id="timer"></div>
+            <p id="maStation"> Réservation expirée, veuillez selectionné une nouvelle station ! </p>
+        </div>
+    </section>
+    <footer>
+        <p id="footerP"> 2019 | Quellard Corentin </p>
+    </footer>
+    <script src="/JS/slider.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+    <script src="/JS/map.js"></script>
+    <script src="/JS/canvas.js"></script>
+    <script src="/JS/formulaire.js"></script>
+    <script src="/JS/reservation.js"></script>
+</body>
+
+</html>
